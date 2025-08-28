@@ -1,0 +1,13 @@
+
+name = input("Enter your name: ")
+
+pennies = int(input("Enter number of pennies: "))
+nickels = int(input("Enter number of nickels: "))
+dimes = int(input("Enter number of dimes: "))
+quarters = int(input("Enter number of quarters: "))
+
+
+total_cents = pennies * 1 + nickels * 5 + dimes * 10 + quarters * 25
+total_dollars = total_cents / 100
+
+print(f"Hello {name}, you have ${total_dollars:} in change.")
