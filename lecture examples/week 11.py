@@ -38,4 +38,12 @@ def dates_app() -> None:
                 days:int = int(input_split[2])
                 print(days_plus_or_minus(given_date, days))
             elif operator == '3':
-                datatime_1:
+                datatime_1: datetime = datime.strptime(input_split[1], '%m/%d/%Y')
+                datetime_2: datetime = datetime.strptime(input_split[2], '%m/%d/%Y')
+            units: str = input_split[3]
+
+           print(data_diff(datetime_1, datetime_2, units))
+      elif operator == '4':
+        given_date: date = datetime.strptime(input_split[1], '%m/%d/%Y')
+        print(day_of_week(given_data))
+     elif operator == '5':
