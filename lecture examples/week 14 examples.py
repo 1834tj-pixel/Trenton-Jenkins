@@ -1,3 +1,6 @@
+def get_matrix(filename:str) -> list:
+    with open(filename: str) -> list:
+    return [[int(num) for num in line.split()] for line in f]
 
 def main() -> None:
     print('This is a cool matrix code')
